@@ -14,11 +14,12 @@ export class Department extends Component
     }
 
     refreshList(){
-        this.setState({
-            deps:[{"DepartmentID":1, "DepartmentName":"IT"},
-            {"DepartmentID":2, "DepartmentName":"Sup"}
-        ]
-        })
+        fetch('https://localhost:44310/api/department')
+        .then(Response => Response.json())
+        .then(data => {
+        this.setState({deps:data});
+        }
+            );
     }
 
     render(){

@@ -134,7 +134,9 @@ C:\Users\Michał\Documents\GitHubRepo\js-react-fullstack-web-app\WebAPI\WebAPI\b
 C:\Users\Michał\Documents\GitHubRepo\js-react-fullstack-web-app\WebAPI\WebAPI\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\Michał\Documents\GitHubRepo\js-react-fullstack-web-app\WebAPI\WebAPI\bin\Newtonsoft.Json.dll
 C:\Users\Michał\Documents\GitHubRepo\js-react-fullstack-web-app\WebAPI\WebAPI\bin\System.Net.Http.Formatting.dll
+C:\Users\Michał\Documents\GitHubRepo\js-react-fullstack-web-app\WebAPI\WebAPI\bin\System.Web.Cors.dll
 C:\Users\Michał\Documents\GitHubRepo\js-react-fullstack-web-app\WebAPI\WebAPI\bin\System.Web.Helpers.dll
+C:\Users\Michał\Documents\GitHubRepo\js-react-fullstack-web-app\WebAPI\WebAPI\bin\System.Web.Http.Cors.dll
 C:\Users\Michał\Documents\GitHubRepo\js-react-fullstack-web-app\WebAPI\WebAPI\bin\System.Web.Http.dll
 C:\Users\Michał\Documents\GitHubRepo\js-react-fullstack-web-app\WebAPI\WebAPI\bin\System.Web.Http.WebHost.dll
 C:\Users\Michał\Documents\GitHubRepo\js-react-fullstack-web-app\WebAPI\WebAPI\bin\System.Web.Mvc.dll
@@ -144,6 +146,7 @@ C:\Users\Michał\Documents\GitHubRepo\js-react-fullstack-web-app\WebAPI\WebAPI\b
 C:\Users\Michał\Documents\GitHubRepo\js-react-fullstack-web-app\WebAPI\WebAPI\bin\System.Web.WebPages.dll
 C:\Users\Michał\Documents\GitHubRepo\js-react-fullstack-web-app\WebAPI\WebAPI\bin\System.Web.WebPages.Razor.dll
 C:\Users\Michał\Documents\GitHubRepo\js-react-fullstack-web-app\WebAPI\WebAPI\bin\WebGrease.dll
+C:\Users\Michał\Documents\GitHubRepo\js-react-fullstack-web-app\WebAPI\WebAPI\bin\System.Web.Http.Cors.xml
 C:\Users\Michał\Documents\GitHubRepo\js-react-fullstack-web-app\WebAPI\WebAPI\bin\Newtonsoft.Json.xml
 C:\Users\Michał\Documents\GitHubRepo\js-react-fullstack-web-app\WebAPI\WebAPI\bin\System.Net.Http.Formatting.xml
 C:\Users\Michał\Documents\GitHubRepo\js-react-fullstack-web-app\WebAPI\WebAPI\bin\System.Web.Helpers.xml
@@ -157,7 +160,6 @@ C:\Users\Michał\Documents\GitHubRepo\js-react-fullstack-web-app\WebAPI\WebAPI\b
 C:\Users\Michał\Documents\GitHubRepo\js-react-fullstack-web-app\WebAPI\WebAPI\bin\System.Web.WebPages.Razor.xml
 C:\Users\Michał\Documents\GitHubRepo\js-react-fullstack-web-app\WebAPI\WebAPI\bin\Antlr3.Runtime.pdb
 C:\Users\Michał\Documents\GitHubRepo\js-react-fullstack-web-app\WebAPI\WebAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Michał\Documents\GitHubRepo\js-react-fullstack-web-app\WebAPI\WebAPI\obj\Debug\WebAPI.csprojAssemblyReference.cache
 C:\Users\Michał\Documents\GitHubRepo\js-react-fullstack-web-app\WebAPI\WebAPI\obj\Debug\WebAPI.csproj.CopyComplete
 C:\Users\Michał\Documents\GitHubRepo\js-react-fullstack-web-app\WebAPI\WebAPI\obj\Debug\WebAPI.dll
 C:\Users\Michał\Documents\GitHubRepo\js-react-fullstack-web-app\WebAPI\WebAPI\obj\Debug\WebAPI.pdb

@@ -9,7 +9,28 @@ export class AddDepModal extends Component{
     handleSubmit(event){
       event.preventDefault();
 
-      alert(event.target.DepartmentName.value);
+      fetch('https://localhost:44310/api/department',{
+        method:'POST',
+        headers:{
+          'Accept':'application/json',
+          'Content-Type':'application/json'
+        },
+        body:JSON.stringify({
+          DepartmentID: null,
+          DepartmentName: event.target.DepartmentName.value
+        })
+      })
+      .then(res=> res.json())
+      .then((result)=>
+      {
+        alert(result);
+      },
+      (error)=>
+      {
+        alert('Failed')
+      }
+      )
+      //alert(event.target.DepartmentName.value);
     }
 
     render(){

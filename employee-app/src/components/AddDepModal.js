@@ -1,10 +1,21 @@
 import React, {Component} from 'react';
 import {Modal, Button, Row, Col, Form} from 'react-bootstrap';
 
+import Snakbar from '@material-ui/core/Snackbar';
+import IconButton from '@material-ui/core/IconButton'
+
 export class AddDepModal extends Component{
   constructor(props){
       super(props);
+
+      this.state = {snackbaropen: false, snackbarmsg: ''};
+      this.handleSubmit = this.handleSubmit.bind(this);
   }
+
+
+    snackbarClose = (event) =>{
+      this.setState({snackbaropen:false});
+    };
 
     handleSubmit(event){
       event.preventDefault();
@@ -23,11 +34,13 @@ export class AddDepModal extends Component{
       .then(res=> res.json())
       .then((result)=>
       {
-        alert(result);
+        this.setState({snackbaropen:true, snackbarmsg:result});
+        //alert(result);
       },
       (error)=>
       {
-        alert('Failed')
+        this.setState({snackbaropen:true, snackbarmsg:'Failed'});
+        //alert('Failed')
       }
       )
       //alert(event.target.DepartmentName.value);
@@ -35,7 +48,24 @@ export class AddDepModal extends Component{
 
     render(){
         return(
-          
+          <div className="container">
+            <Snakbar anchorOrigin={{vertical:'bottom',horizontal:'left'}}
+            open = {this.state.snackbaropen}
+            autoHideDuration = {2000}
+            onClose={this.snackbarClose}
+
+            message = {<span id="message-id">{this.state.snackbarmsg}</span>}
+            action={[
+              <IconButton
+                key = "close"
+                arial-label="Close"
+                color="inherit"
+                onClick={this.snackbarClose}
+                >
+                x
+              </IconButton>
+            ]}
+            />
           <Modal
           {...this.props}
           size="lg"
@@ -48,7 +78,7 @@ export class AddDepModal extends Component{
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-          <div className="container">
+          
           
           <Row>
             <Col sm={6}>
@@ -73,14 +103,14 @@ export class AddDepModal extends Component{
             </Col>
           </Row>
 
-          </div>
+          
       </Modal.Body>
         <Modal.Footer>
           <Button variant="danger" onClick={this.props.onHide}>Close</Button>
         </Modal.Footer>
       </Modal>
-      
-        )
+      </div>
+        );
     }
 
 }

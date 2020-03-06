@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
 
-import {Home} from './components/Home'
-import {Department} from './components/Department'
-import {Employee} from './components/Employee'
-import {Navigation} from './components/Navigation'
-import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import {Home} from './components/Home';
+import {Department} from './components/Department';
+import {Employee} from './components/Employee';
+import {Navigation} from './components/Navigation';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 function App() {
   return (

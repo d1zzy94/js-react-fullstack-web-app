@@ -8,7 +8,7 @@ export class AddDepModal extends Component{
 
     render(){
         return(
-          <div className="container">
+          
           <Modal
           {...this.props}
           size="lg"
@@ -21,13 +21,15 @@ export class AddDepModal extends Component{
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
+          <div className="container">
           To add Form fields for department.
+          </div>
       </Modal.Body>
         <Modal.Footer>
           <Button variant="danger" onClick={this.props.onHide}>Close</Button>
         </Modal.Footer>
       </Modal>
-      </div>
+      
         )
     }
 

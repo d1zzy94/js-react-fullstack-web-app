@@ -6,6 +6,12 @@ export class AddDepModal extends Component{
       super(props);
   }
 
+    handleSubmit(event){
+      event.preventDefault();
+
+      alert(event.target.DepartmentName.value);
+    }
+
     render(){
         return(
           
@@ -22,7 +28,30 @@ export class AddDepModal extends Component{
           </Modal.Header>
           <Modal.Body>
           <div className="container">
-          To add Form fields for department.
+          
+          <Row>
+            <Col sm={6}>
+              <Form onSubmit={this.handleSubmit}>
+                <Form.Group controlId="DepartmentName">
+                  <Form.Label>DepartmentName</Form.Label>
+                  <Form.Control
+                  type="text"
+                  name="DepartmentName"
+                  required
+                  placeholder="Place for Department Name"
+                  />
+                </Form.Group>
+
+                <Form.Group>
+                    <Button variant="primary" type="submit">
+                      Add Department
+                    </Button>
+                </Form.Group>
+
+              </Form>
+            </Col>
+          </Row>
+
           </div>
       </Modal.Body>
         <Modal.Footer>

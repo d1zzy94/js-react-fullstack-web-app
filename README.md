@@ -9,7 +9,7 @@ Learn React JS and Web API by creating a Full Stack Web App
    2. Find `Web.config` file and open it.
    3. Paste code under `</appSettings>` and before `<system.web>`.
 ```
-      <connectionStrings>
-        <add name="EmployeeAppDB" connectionString="Data Source=.;Initial Catalog=EmployeeDB;Integrated Security=true" providerName="System.Data.SqlClient" />
-      </connectionStrings>
+<connectionStrings>
+    <add name="EmployeeAppDB" connectionString="Data Source=.;Initial Catalog=EmployeeDB;Integrated Security=true" providerName="System.Data.SqlClient" />
+</connectionStrings>
 ```      

@@ -7,7 +7,6 @@ import IconButton from '@material-ui/core/IconButton'
 export class AddDepModal extends Component{
   constructor(props){
       super(props);
-
       this.state = {snackbaropen: false, snackbarmsg: ''};
       this.handleSubmit = this.handleSubmit.bind(this);
   }
